@@ -1,4 +1,34 @@
 #myTimer {
-    color: red;
-    font-size: 64px;
+  font-size: 64px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  align-items: center;
+  padding: 4rem;
+}
+#timerField {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  background-color: lightgreen;
+  padding: 2rem;
+}
+#reset {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 1.5rem;
+}
+#stop,
+#start {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  background-color: lightgreen;
+  padding: 1.5rem;
+}
+
+.hide {
+  display: none;
+}
+button {
+  border: 1px solid black;
+  padding: 0.5rem;
 }
